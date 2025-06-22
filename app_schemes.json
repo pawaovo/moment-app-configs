@@ -12,7 +12,7 @@
     {
       "id": "zhihu",
       "package": "com.zhihu.android",
-      "scheme": "zhihu-broken://search?query={keyword}",
+      "scheme": "zhihu://search?query={keyword}",
       "theme_color": "#0084FF",
       "enabled": true,
       "priority": 2
