@@ -1,0 +1,108 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2025-06-22T10:30:00Z",
+  "min_app_version": "1.0.0",
+  "update_priority": "normal",
+  "changelog": "初始版本配置",
+  "platforms": [
+    {
+      "id": "xhs",
+      "package": "com.xingin.xhs",
+      "scheme": "xhsdiscover://search/result?keyword={keyword}",
+      "fallback": "https://www.xiaohongshu.com/search_result?keyword={keyword}",
+      "theme_color": "#FF2442",
+      "enabled": true,
+      "priority": 1,
+      "added_version": "1.0.0",
+      "last_updated": "2025-06-22"
+    },
+    {
+      "id": "zhihu",
+      "package": "com.zhihu.android",
+      "scheme": "zhihu://search?query={keyword}",
+      "fallback": "https://www.zhihu.com/search?q={keyword}",
+      "theme_color": "#0084FF",
+      "enabled": true,
+      "priority": 2,
+      "added_version": "1.0.0",
+      "last_updated": "2025-06-22"
+    },
+    {
+      "id": "dianping",
+      "package": "com.dianping.v1",
+      "scheme": "dianping://searchshoplist?keyword={keyword}",
+      "fallback": "https://www.dianping.com/search/keyword/{keyword}",
+      "theme_color": "#FFBE00",
+      "enabled": true,
+      "priority": 3,
+      "added_version": "1.0.0",
+      "last_updated": "2025-06-22"
+    },
+    {
+      "id": "douyin",
+      "package": "com.ss.android.ugc.aweme",
+      "scheme": "snssdk1128://search/tabs?keyword={keyword}",
+      "fallback": "https://www.douyin.com/search/{keyword}",
+      "theme_color": "#FE2C55",
+      "enabled": true,
+      "priority": 4,
+      "added_version": "1.0.0",
+      "last_updated": "2025-06-22"
+    },
+    {
+      "id": "bilibili",
+      "package": "tv.danmaku.bili",
+      "scheme": "bilibili://search?keyword={keyword}",
+      "fallback": "https://search.bilibili.com/all?keyword={keyword}",
+      "theme_color": "#00A1D6",
+      "enabled": true,
+      "priority": 5,
+      "added_version": "1.0.0",
+      "last_updated": "2025-06-22"
+    },
+    {
+      "id": "pinduoduo",
+      "package": "com.xunmeng.pinduoduo",
+      "scheme": "pinduoduo://com.xunmeng.pinduoduo/search_result.html?search_key={keyword}",
+      "fallback": "https://mobile.yangkeduo.com/search_result.html?search_key={keyword}",
+      "theme_color": "#E02E24",
+      "enabled": true,
+      "priority": 6,
+      "added_version": "1.0.0",
+      "last_updated": "2025-06-22"
+    },
+    {
+      "id": "meituan",
+      "package": "com.sankuai.meituan",
+      "scheme": "imeituan://www.meituan.com/search?q={keyword}",
+      "fallback": "https://www.meituan.com/search?q={keyword}",
+      "theme_color": "#FFC300",
+      "enabled": true,
+      "priority": 7,
+      "added_version": "1.0.0",
+      "last_updated": "2025-06-22"
+    },
+    {
+      "id": "ctrip",
+      "package": "ctrip.android.view",
+      "scheme": "ctrip://wireless/search?keyword={keyword}",
+      "fallback": "https://you.ctrip.com/search?q={keyword}",
+      "theme_color": "#0086F6",
+      "enabled": true,
+      "priority": 8,
+      "added_version": "1.0.0",
+      "last_updated": "2025-06-22"
+    },
+    {
+      "id": "douban",
+      "package": "com.douban.frodo",
+      "scheme": "douban://douban.com/search?q={keyword}",
+      "fallback": "https://www.douban.com/search?q={keyword}",
+      "theme_color": "#00B51D",
+      "enabled": true,
+      "priority": 9,
+      "added_version": "1.0.0",
+      "last_updated": "2025-06-22"
+    }
+  ]
+}
