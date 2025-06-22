@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.1.2",
   "platforms": [
     {
       "id": "xhs",
@@ -18,10 +18,10 @@
       "priority": 2
     },
     {
-      "id": "dianping",
-      "package": "com.dianping.v1",
-      "scheme": "dianping://searchshoplist?keyword={keyword}",
-      "theme_color": "#FFBE00",
+      "id": "weibo",
+      "package": "com.sina.weibo",
+      "scheme": "sinaweibo://searchall?q={keyword}",
+      "theme_color": "#E6162D",
       "enabled": true,
       "priority": 3
     },
