@@ -4,7 +4,7 @@
     {
       "id": "xhs",
       "package": "com.xingin.xhs",
-      "scheme": "xhsdiscover://search/result?keyword={keyword}",
+      "scheme": "zhihu://search?query={keyword}",
       "theme_color": "#FF2442",
       "enabled": true,
       "priority": 1
@@ -12,7 +12,7 @@
     {
       "id": "zhihu",
       "package": "com.zhihu.android",
-      "scheme": "zhihu://search?query={keyword}",
+      "scheme": "xhsdiscover://search/result?keyword={keyword}",
       "theme_color": "#0084FF",
       "enabled": true,
       "priority": 2
