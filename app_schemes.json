@@ -1,5 +1,5 @@
 {
-  "version": "0.1.2",
+  "version": "0.1.1",
   "platforms": [
     {
       "id": "xhs",
@@ -12,7 +12,7 @@
     {
       "id": "zhihu",
       "package": "com.zhihu.android",
-      "scheme": "zhihu://search?query={keyword}",
+      "scheme": "zhihu://={keyword}",
       "theme_color": "#0084FF",
       "enabled": true,
       "priority": 2
