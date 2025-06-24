@@ -1,10 +1,10 @@
 {
-  "version": "0.1.5",
+  "version": "0.1.2",
   "platforms": [
     {
       "id": "xhs",
       "package": "com.xingin.xhs",
-      "scheme": "zhihu://search?query={keyword}",
+      "scheme": "xhsdiscover://search/result?keyword={keyword}",
       "theme_color": "#FF2442",
       "enabled": true,
       "priority": 1
