@@ -8,7 +8,7 @@
       "theme_color": "#FF2442",
       "enabled": true,
       "priority": 1,
-      "overlay_duration": 5400
+      "overlay_duration": 1400
     },
     {
       "id": "zhihu",
