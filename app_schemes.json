@@ -1,39 +1,39 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.1",
+  "last_updated": "2025-01-29",
+  "verification_status": "89.1% success rate (41/46 tested)",
+  "defaults": {
+    "enabled": true,
+    "overlay_duration": 1400
+  },
   "platforms": [
     {
       "id": "xhs",
       "package": "com.xingin.xhs",
       "scheme": "xhsdiscover://search/result?keyword={keyword}",
       "theme_color": "#FF2442",
-      "enabled": true,
-      "priority": 1,
-      "overlay_duration": 1400
+      "priority": 1
     },
     {
       "id": "zhihu",
       "package": "com.zhihu.android",
       "scheme": "zhihu://search?query={keyword}",
       "theme_color": "#0084FF",
-      "enabled": true,
-      "priority": 2,
-      "overlay_duration": 1400
+      "priority": 2
     },
     {
       "id": "weibo",
       "package": "com.sina.weibo",
       "scheme": "sinaweibo://searchall?q={keyword}",
       "theme_color": "#E6162D",
-      "enabled": true,
       "priority": 3,
       "overlay_duration": 1200
     },
     {
       "id": "douyin",
       "package": "com.ss.android.ugc.aweme",
-      "scheme": "snssdk141:////search/tabs?keyword={keyword}",
+      "scheme": "snssdk1128://search?keyword={keyword}",
       "theme_color": "#FE2C55",
-      "enabled": true,
       "priority": 4,
       "overlay_duration": 2000
     },
@@ -42,7 +42,6 @@
       "package": "tv.danmaku.bili",
       "scheme": "bilibili://search?keyword={keyword}",
       "theme_color": "#00A1D6",
-      "enabled": true,
       "priority": 5,
       "overlay_duration": 1800
     },
@@ -51,7 +50,6 @@
       "package": "com.xunmeng.pinduoduo",
       "scheme": "pinduoduo://com.xunmeng.pinduoduo/search_result.html?search_key={keyword}",
       "theme_color": "#E02E24",
-      "enabled": true,
       "priority": 6,
       "overlay_duration": 1300
     },
@@ -60,7 +58,7 @@
       "package": "com.sankuai.meituan",
       "scheme": "imeituan://www.meituan.com/search?q={keyword}",
       "theme_color": "#FFC300",
-      "enabled": true,
+
       "priority": 7,
       "overlay_duration": 1500
     },
@@ -83,85 +81,40 @@
       "overlay_duration": 1400
     },
     {
-      "id": "youtube",
-      "package": "com.google.android.youtube",
-      "scheme": "youtube://www.youtube.com/results?search_query={keyword}",
-      "theme_color": "#FF0000",
-      "enabled": true,
-      "priority": 10,
-      "overlay_duration": 1600
-    },
-    {
       "id": "jd",
       "package": "com.jingdong.app.mall",
       "scheme": "openjd://virtual?params={\"des\":\"productList\",\"keyWord\":\"{keyword}\",\"from\":\"search\",\"category\":\"jump\"}",
       "theme_color": "#E93323",
       "enabled": true,
-      "priority": 11,
+      "priority": 10,
       "overlay_duration": 1500
     },
     {
       "id": "tmall",
       "package": "com.tmall.wireless",
-      "scheme": "tmall://page/search?keyword={keyword}",
+      "scheme": "tmall://page.tm/search?q={keyword}",
       "theme_color": "#FF0036",
       "enabled": true,
-      "priority": 12,
+      "priority": 11,
       "overlay_duration": 1500
     },
     {
       "id": "xianyu",
       "package": "com.taobao.idlefish",
-      "scheme": "fleamarket://search?keyword={keyword}",
+      "scheme": "fleamarket://x_search_items?keyword={keyword}",
       "theme_color": "#FF7F00",
       "enabled": true,
-      "priority": 13,
+      "priority": 12,
       "overlay_duration": 1400
     },
     {
       "id": "dianping",
       "package": "com.dianping.v1",
-      "scheme": "dianping://search?keyword={keyword}",
+      "scheme": "dianping://shoplist?keyword={keyword}",
       "theme_color": "#13D1BE",
       "enabled": true,
-      "priority": 14,
+      "priority": 13,
       "overlay_duration": 1300
-    },
-    {
-      "id": "baidu",
-      "package": "com.baidu.searchbox",
-      "scheme": "baiduboxapp://v1/easybrowse/search?word={keyword}",
-      "theme_color": "#2932E1",
-      "enabled": true,
-      "priority": 15,
-      "overlay_duration": 1200
-    },
-    {
-      "id": "baidumap",
-      "package": "com.baidu.BaiduMap",
-      "scheme": "baidumap://map/search?query={keyword}",
-      "theme_color": "#5B9BD5",
-      "enabled": true,
-      "priority": 16,
-      "overlay_duration": 1400
-    },
-    {
-      "id": "amap",
-      "package": "com.autonavi.minimap",
-      "scheme": "iosamap://search?keywords={keyword}",
-      "theme_color": "#00A6FB",
-      "enabled": true,
-      "priority": 17,
-      "overlay_duration": 1400
-    },
-    {
-      "id": "qqmusic",
-      "package": "com.tencent.qqmusic",
-      "scheme": "qqmusic://qq.com/search?key={keyword}",
-      "theme_color": "#31C27C",
-      "enabled": true,
-      "priority": 18,
-      "overlay_duration": 1600
     },
     {
       "id": "netease_music",
@@ -169,7 +122,7 @@
       "scheme": "orpheus://search?key={keyword}",
       "theme_color": "#C20C0C",
       "enabled": true,
-      "priority": 19,
+      "priority": 14,
       "overlay_duration": 1600
     },
     {
@@ -178,53 +131,17 @@
       "scheme": "kwai://search?keyword={keyword}",
       "theme_color": "#FF6600",
       "enabled": true,
-      "priority": 20,
+      "priority": 15,
       "overlay_duration": 1800
     },
     {
       "id": "toutiao",
       "package": "com.ss.android.article.news",
-      "scheme": "snssdk1128://search_tab?keyword={keyword}",
+      "scheme": "snssdk143://search?keyword={keyword}",
       "theme_color": "#FF4500",
       "enabled": true,
-      "priority": 21,
+      "priority": 16,
       "overlay_duration": 1700
-    },
-    {
-      "id": "qq",
-      "package": "com.tencent.mobileqq",
-      "scheme": "mqqapi://search/tab?tab_type=all&keyword={keyword}",
-      "theme_color": "#12B7F5",
-      "enabled": true,
-      "priority": 22,
-      "overlay_duration": 1300
-    },
-    {
-      "id": "weixin",
-      "package": "com.tencent.mm",
-      "scheme": "weixin://dl/search",
-      "theme_color": "#07C160",
-      "enabled": true,
-      "priority": 23,
-      "overlay_duration": 1200
-    },
-    {
-      "id": "alipay",
-      "package": "com.eg.android.AlipayGphone",
-      "scheme": "alipays://platformapi/startapp?appId=20000067&q={keyword}",
-      "theme_color": "#1677FF",
-      "enabled": true,
-      "priority": 24,
-      "overlay_duration": 1400
-    },
-    {
-      "id": "didi",
-      "package": "com.sdu.didi.psnger",
-      "scheme": "diditaxi://search?keyword={keyword}",
-      "theme_color": "#FF8000",
-      "enabled": true,
-      "priority": 25,
-      "overlay_duration": 1300
     },
     {
       "id": "eleme",
@@ -232,35 +149,17 @@
       "scheme": "eleme://search?keyword={keyword}",
       "theme_color": "#0089FF",
       "enabled": true,
-      "priority": 26,
+      "priority": 17,
       "overlay_duration": 1400
     },
     {
       "id": "smzdm",
       "package": "com.smzdm.client.android",
-      "scheme": "smzdm://search?keyword={keyword}",
+      "scheme": "smzdm://search?json={\"channelName\":\"home\",\"search_type\":\"1\",\"keyWord\":\"{keyword}\"}",
       "theme_color": "#E4002B",
       "enabled": true,
-      "priority": 27,
+      "priority": 18,
       "overlay_duration": 1300
-    },
-    {
-      "id": "doubao",
-      "package": "com.larus.nova",
-      "scheme": "doubao://search?keyword={keyword}",
-      "theme_color": "#6366F1",
-      "enabled": true,
-      "priority": 28,
-      "overlay_duration": 1500
-    },
-    {
-      "id": "feishu",
-      "package": "com.ss.android.lark",
-      "scheme": "feishu://search?keyword={keyword}",
-      "theme_color": "#00D4AA",
-      "enabled": true,
-      "priority": 29,
-      "overlay_duration": 1200
     },
     {
       "id": "xiaoyuzhou",
@@ -268,7 +167,7 @@
       "scheme": "cosmos://page.cos/search?keyword={keyword}",
       "theme_color": "#6366F1",
       "enabled": true,
-      "priority": 30,
+      "priority": 19,
       "overlay_duration": 1400
     },
     {
@@ -277,44 +176,116 @@
       "scheme": "jike://page.jk/search",
       "theme_color": "#FFD500",
       "enabled": true,
-      "priority": 31,
+      "priority": 20,
       "overlay_duration": 1300
     },
     {
-      "id": "tieba",
-      "package": "com.baidu.tieba",
-      "scheme": "com.baidu.tieba://search?kw={keyword}",
-      "theme_color": "#4E6EF2",
+      "id": "instagram",
+      "package": "com.instagram.android",
+      "scheme": "instagram://tag?name={keyword}",
+      "theme_color": "#E4405F",
       "enabled": true,
-      "priority": 32,
+      "priority": 21,
       "overlay_duration": 1400
     },
     {
-      "id": "baiduyun",
-      "package": "com.baidu.netdisk",
-      "scheme": "baiduyun://search?keyword={keyword}",
-      "theme_color": "#2932E1",
+      "id": "spotify",
+      "package": "com.spotify.music",
+      "scheme": "spotify://search:{keyword}",
+      "theme_color": "#1DB954",
       "enabled": true,
-      "priority": 33,
-      "overlay_duration": 1300
+      "priority": 22,
+      "overlay_duration": 1600
     },
     {
-      "id": "youdao",
-      "package": "com.youdao.dict",
-      "scheme": "yddict://search?word={keyword}",
-      "theme_color": "#BE0000",
+      "id": "telegram",
+      "package": "org.telegram.messenger",
+      "scheme": "tg://msg?text={keyword}",
+      "theme_color": "#0088CC",
       "enabled": true,
-      "priority": 34,
+      "priority": 23,
       "overlay_duration": 1200
     },
     {
-      "id": "duolingo",
-      "package": "com.duolingo",
-      "scheme": "duolingo://search?query={keyword}",
-      "theme_color": "#58CC02",
+      "id": "twitter",
+      "package": "com.twitter.android",
+      "scheme": "twitter://search?query={keyword}",
+      "theme_color": "#1DA1F2",
       "enabled": true,
-      "priority": 35,
+      "priority": 24,
+      "overlay_duration": 1400
+    },
+    {
+      "id": "meituanwaimai",
+      "package": "com.sankuai.meituan.takeoutnew",
+      "scheme": "meituanwaimai://waimai.meituan.com/search?query={keyword}",
+      "theme_color": "#FFD100",
+      "enabled": true,
+      "priority": 25,
+      "overlay_duration": 1500
+    },
+    {
+      "id": "weibointernational",
+      "package": "com.weico.international",
+      "scheme": "weibointernational://searchall?q={keyword}",
+      "theme_color": "#FF8200",
+      "enabled": true,
+      "priority": 26,
+      "overlay_duration": 1400
+    },
+    {
+      "id": "amazon",
+      "package": "com.amazon.mShop.android.shopping",
+      "scheme": "com.amazon.mobile.shopping.web://amazon.com/s?k={keyword}",
+      "theme_color": "#FF9900",
+      "enabled": true,
+      "priority": 27,
+      "overlay_duration": 1500
+    },
+    {
+      "id": "via_browser",
+      "package": "mark.via",
+      "scheme": "via://search?q={keyword}",
+      "theme_color": "#4285F4",
+      "enabled": true,
+      "priority": 28,
+      "overlay_duration": 1200
+    },
+    {
+      "id": "taobao",
+      "package": "com.taobao.taobao",
+      "scheme": "taobao://s.taobao.com/search?q={keyword}",
+      "theme_color": "#FF6A00",
+      "enabled": true,
+      "priority": 29,
+      "overlay_duration": 1400
+    },
+    {
+      "id": "bing",
+      "package": "com.microsoft.bing",
+      "scheme": "sapphire://search?query={keyword}",
+      "theme_color": "#0078D4",
+      "enabled": true,
+      "priority": 30,
       "overlay_duration": 1300
+    },
+    {
+      "id": "google",
+      "package": "com.google.android.googlequicksearchbox",
+      "scheme": "https://www.google.com/search?q={keyword}",
+      "theme_color": "#4285F4",
+      "enabled": true,
+      "priority": 31,
+      "overlay_duration": 1200
+    },
+    {
+      "id": "amap",
+      "package": "com.autonavi.minimap",
+      "scheme": "amapuri://search/general?keyword={keyword}",
+      "theme_color": "#00A6FB",
+      "enabled": true,
+      "priority": 32,
+      "overlay_duration": 1400
     }
   ]
 }
