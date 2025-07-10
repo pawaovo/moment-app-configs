@@ -1,10 +1,9 @@
 {
-  "version": "0.2.1",
+  "version": "0.2.2",
   "last_updated": "2025-01-29",
   "verification_status": "89.1% success rate (41/46 tested)",
   "defaults": {
-    "enabled": true,
-    "overlay_duration": 2000
+    "enabled": true
   },
   "platforms": [
     {
@@ -18,9 +17,10 @@
       "id": "zhihu",
       "package": "com.zhihu.android",
       "scheme": "zhihu://search?query={keyword}",
-      "encoding_strategy": "none",
       "theme_color": "#0084FF",
-      "priority": 2
+      "priority": 2,
+      "overlay_duration": 5000,
+      "retry_delay": 1500
     },
     {
       "id": "weibo",
