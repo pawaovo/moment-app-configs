@@ -18,6 +18,7 @@
       "id": "zhihu",
       "package": "com.zhihu.android",
       "scheme": "zhihu://search?query={keyword}",
+      "encoding_strategy": "none",
       "theme_color": "#0084FF",
       "priority": 2
     },
