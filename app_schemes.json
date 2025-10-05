@@ -1,7 +1,7 @@
 {
-  "version": "0.2.2",
-  "last_updated": "2025-01-29",
-  "verification_status": "89.1% success rate (41/46 tested)",
+  "version": "0.2.3",
+  "last_updated": "2025-01-21",
+  "verification_status": "89.1% success rate (41/46 tested) + 2 new apps added",
   "defaults": {
     "enabled": true
   },
@@ -10,8 +10,11 @@
       "id": "xhs",
       "package": "com.xingin.xhs",
       "scheme": "xhsdiscover://search/result?keyword={keyword}",
+      "fallback_url": "https://www.xiaohongshu.com/search_result?keyword={keyword}",
       "theme_color": "#FF2442",
-      "priority": 1
+      "enabled": true,
+      "priority": 1,
+      "overlay_duration": 2000
     },
     {
       "id": "zhihu",
@@ -19,7 +22,7 @@
       "scheme": "zhihu://search?query={keyword}",
       "theme_color": "#0084FF",
       "priority": 2,
-      "overlay_duration": 5000,
+      "overlay_duration": 2000,
       "retry_delay": 1500
     },
     {
@@ -27,6 +30,7 @@
       "package": "com.sina.weibo",
       "scheme": "sinaweibo://searchall?q={keyword}",
       "theme_color": "#E6162D",
+      "enabled": true,
       "priority": 3,
       "overlay_duration": 2000
     },
@@ -35,6 +39,7 @@
       "package": "com.ss.android.ugc.aweme",
       "scheme": "snssdk1128://search?keyword={keyword}",
       "theme_color": "#FE2C55",
+      "enabled": true,
       "priority": 4,
       "overlay_duration": 2000
     },
@@ -43,6 +48,7 @@
       "package": "tv.danmaku.bili",
       "scheme": "bilibili://search?keyword={keyword}",
       "theme_color": "#00A1D6",
+      "enabled": true,
       "priority": 5,
       "overlay_duration": 2000
     },
@@ -51,6 +57,7 @@
       "package": "com.xunmeng.pinduoduo",
       "scheme": "pinduoduo://com.xunmeng.pinduoduo/search_result.html?search_key={keyword}",
       "theme_color": "#E02E24",
+      "enabled": true,
       "priority": 6,
       "overlay_duration": 2000
     },
@@ -59,7 +66,7 @@
       "package": "com.sankuai.meituan",
       "scheme": "imeituan://www.meituan.com/search?q={keyword}",
       "theme_color": "#FFC300",
-
+      "enabled": true,
       "priority": 7,
       "overlay_duration": 2000
     },
@@ -287,6 +294,59 @@
       "enabled": true,
       "priority": 32,
       "overlay_duration": 2000
+    },
+    {
+      "id": "kimi",
+      "package": "com.moonshot.kimichat",
+      "scheme": "kimi://chat?name=chat&prompt={keyword}",
+      "fallback_schemes": [
+        "kimi://chat?prompt={keyword}"
+      ],
+      "theme_color": "#6366F1",
+      "enabled": true,
+      "priority": 33,
+      "overlay_duration": 2000,
+      "note": "Kimi智能助手 - 月之暗面AI对话应用"
+    },
+    {
+      "id": "doubao",
+      "package": "com.larus.nova",
+      "scheme": "doubao://flow/chat?question={keyword}",
+      "fallback_schemes": [
+        "doubao://main?question={keyword}",
+        "doubao://chat_page?question={keyword}"
+      ],
+      "theme_color": "#6366F1",
+      "enabled": true,
+      "priority": 34,
+      "overlay_duration": 2000,
+      "note": "豆包AI助手 - 基于ChatRoutePushInterceptor源码分析的真实URL scheme"
+    },
+    {
+      "id": "chatgpt",
+      "package": "com.openai.chatgpt",
+      "scheme": "https://chat.openai.com/?q={keyword}",
+      "fallback_schemes": [
+        "https://chat.openai.com/?q={keyword}&temporary=true"
+      ],
+      "theme_color": "#10A37F",
+      "enabled": true,
+      "priority": 35,
+      "overlay_duration": 2000,
+      "note": "ChatGPT - 支持HTTPS App Links，参数注入但需手动发送"
+    },
+    {
+      "id": "youtube",
+      "package": "com.google.android.youtube",
+      "scheme": "youtube_media_search://{keyword}",
+      "fallback_schemes": [
+        "youtube://results?search_query={keyword}"
+      ],
+      "theme_color": "#FF0000",
+      "enabled": true,
+      "priority": 36,
+      "overlay_duration": 2000,
+      "note": "YouTube - 使用Intent Action实现完美搜索直达"
     }
   ]
 }
