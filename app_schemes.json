@@ -347,6 +347,105 @@
       "priority": 36,
       "overlay_duration": 2000,
       "note": "YouTube - 使用Intent Action实现完美搜索直达"
+    },
+    {
+      "id": "alipay_scan",
+      "package": "com.eg.android.AlipayGphone",
+      "scheme": "alipayqr://platformapi/startapp?saId=10000007",
+      "theme_color": "#1677FF",
+      "enabled": true,
+      "priority": 37,
+      "overlay_duration": 100,
+      "type": "quick_action",
+      "note": "支付宝扫一扫"
+    },
+    {
+      "id": "alipay_payment",
+      "package": "com.eg.android.AlipayGphone",
+      "scheme": "alipayqr://platformapi/startapp?appId=20000056",
+      "theme_color": "#1677FF",
+      "enabled": true,
+      "priority": 38,
+      "overlay_duration": 100,
+      "type": "quick_action",
+      "note": "支付宝付款码"
+    },
+    {
+      "id": "alipay_transit",
+      "package": "com.eg.android.AlipayGphone",
+      "scheme": "alipayqr://platformapi/startapp?appId=200011235",
+      "theme_color": "#1677FF",
+      "enabled": true,
+      "priority": 39,
+      "overlay_duration": 100,
+      "type": "quick_action",
+      "note": "支付宝乘车码"
+    },
+    {
+      "id": "unionpay_scan",
+      "package": "com.unionpay",
+      "scheme": "upwallet://native/scanCode",
+      "theme_color": "#E21F26",
+      "enabled": true,
+      "priority": 40,
+      "overlay_duration": 100,
+      "type": "quick_action",
+      "note": "云闪付扫一扫"
+    },
+    {
+      "id": "unionpay_payment",
+      "package": "com.unionpay",
+      "scheme": "upwallet://pay",
+      "theme_color": "#E21F26",
+      "enabled": true,
+      "priority": 41,
+      "overlay_duration": 100,
+      "type": "quick_action",
+      "note": "云闪付付款码"
+    },
+    {
+      "id": "unionpay_transit",
+      "package": "com.unionpay",
+      "scheme": "upwallet://rn/rnhtmlridingcode",
+      "theme_color": "#E21F26",
+      "enabled": true,
+      "priority": 42,
+      "overlay_duration": 100,
+      "type": "quick_action",
+      "note": "云闪付乘车码"
+    },
+    {
+      "id": "wechat_scan",
+      "package": "com.tencent.mm",
+      "scheme": "intent://#Intent;action=com.tencent.mm.action.BIZSHORTCUT;launchFlags=0x14000000;package=com.tencent.mm;B.LauncherUI.From.Scaner.Shortcut=true;end",
+      "theme_color": "#07C160",
+      "enabled": true,
+      "priority": 43,
+      "overlay_duration": 100,
+      "type": "quick_action",
+      "note": "微信扫一扫"
+    },
+    {
+      "id": "wechat_payment",
+      "package": "com.tencent.mm",
+      "scheme": "intent://#Intent;action=com.tencent.mm.action.BIZSHORTCUT;launchFlags=0x14000000;package=com.tencent.mm;S.LauncherUI.Shortcut.LaunchType=launch_type_offline_wallet;end",
+      "theme_color": "#07C160",
+      "enabled": true,
+      "priority": 44,
+      "overlay_duration": 100,
+      "type": "quick_action",
+      "note": "微信付款码"
+    },
+    {
+      "id": "wechat_transit",
+      "package": "com.tencent.mm",
+      "scheme": "weixin://app/wxd930ea5d5a258f4f/jumpWxa/?userName=gh_3cf62f4f1d52",
+      "theme_color": "#07C160",
+      "enabled": false,
+      "priority": 45,
+      "overlay_duration": 100,
+      "type": "quick_action",
+      "note": "微信乘车码(需要集成微信SDK)"
     }
   ]
 }
